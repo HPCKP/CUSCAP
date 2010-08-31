@@ -1,0 +1,42 @@
+#!/bin/ksh
+#  first set up filenames
+#
+vaspdir=~/src/vasp
+dimname=param.inc
+ksimname=vasp
+mainname=main.o
+
+touch param.inc
+if [ ! -z ''"$1" ]
+then
+  dimname=param.inc.$1
+  ksimname=vasp.$1
+  mainname=main.o.$1
+fi
+#
+#  make vamp.tmp
+#
+OLDDIR=`pwd`
+cd $vaspdir
+for i in 1 2 3 4
+do
+if [ -f PARAM.INC ] 
+then
+  echo "currently PARAM.INC exists waiting 20 second"
+  sleep 20
+fi
+done
+if [ -f PARAM.INC ] 
+then
+  echo "currently PARAM.INC exists aborting job"
+  stop
+fi 
+mv param.inc PARAM.INC
+cp -p $OLDDIR/param.inc  .
+make vasp.tmp
+size vasp.tmp
+mv PARAM.INC param.inc
+
+cd $OLDDIR
+
+cp -p $vaspdir/vasp.tmp $ksimname

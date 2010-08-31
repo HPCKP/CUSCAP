@@ -1,0 +1,38 @@
+ SYSTEM =  Hg
+
+   NWRITE = 2
+   IALGO  = 48
+   NELM = 13
+   ENMAX  = 140 eV ; IALGO = -1 ; NELMIN = 3 ; NELMDL = 7
+   NGX=30 ; NGY=30 ; NGZ=30 ; NGXF=48 ; NGYF=48 ; NGZF=48
+   NBANDS=316
+   NSIM  =4
+
+   LREAL  = .TRUE.   real space projections
+   BMIX   = 2.5      mixing parameter
+   ISYM   = 0        switch of symmetry
+   EDIFF  = 1E-4
+   LWAVE=.FALSE.
+   LCHARG=.FALSE.
+
+ Ionic Relaxation
+   NSW    =      0    number of steps for IOM
+   NBLOCK = 1 ; KBLOCK =  5
+   SMASS  =     0.5   Nose mass-parameter (am)
+   POTIM  =   5.00    time-step for ion-motion
+   TEBEG  =   423     temperature
+
+  PC-function
+   APACO  = 10.0     distance for P.C.
+
+  Mass of Ions in am
+   POMASS = 200.59000
+   ZVAL   =  12.00
+
+ DOS related values:
+   ISMEAR =    1  ; SIGMA = 0.1
+   EMIN   =   -15 ;  EMAX = 0
+
+ SGI Origin optimized values:
+  LPLANE = .TRUE.
+  NPAR = 4

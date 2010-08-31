@@ -1,0 +1,27 @@
+ vasp.4.6.12  27Jun03 complex 
+ POSCAR found :  1 types and   50 ions
+ LDA part: xc-table for Ceperly-Alder, standard interpolation
+ memory requirements are:
+
+ energy cutoff:                   ENCUT         140.00
+ energy cutoff (augmentation):    ENAUG         265.44
+ memory requirements are:
+
+ number of kpoints                NKPTS                1
+ number of bands                  NBANDS             316
+ number of grid points            MPLWV            57600
+ number of plane waves            NRPLWV            5257
+ real space IRMAX            671  IRDMAX            1851
+ arrays on large grid ( 6 + NTYP)*MPLWVM*16      6451200
+ 1 sets of wavefunctions                        29865792
+ projectors in real space                        4026000
+ projectors in reciprocal space                        0
+---------------------------------------------------------
+ gives a total  of     40.3 Mbytes       or     40342992
+ add 5-10 Mbytes for executable (depends on OS)
+
+
+  NGX = 30; NGY = 30; NGZ = 30
+  NGXF= 48; NGYF= 48; NGZF= 48
+  NBANDS= 316; NBLK= 256
+

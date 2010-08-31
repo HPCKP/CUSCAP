@@ -1,0 +1,31 @@
+title                    = dppc
+cpp                      = /lib/cpp
+integrator               = md
+nsteps                   = 5000
+nstlist                  = 5
+nstxout                  = 0
+nstvout                  = 0
+nstxtcout                = 0
+nstlog                   = 0
+dt                       = 0.004
+constraints = all-bonds
+nstenergy                = 0
+ns_type                  = grid
+coulombtype              = pme
+rlist                    = 0.9
+rvdw                     = 1.4
+rcoulomb                 = 0.9
+tcoupl                   = berendsen
+# with PME we should not have to use coupling groups
+tc_grps                  = system
+tau_t                    = 0.1 
+ref_t                    = 300
+Pcoupl                   = no
+fourier_spacing          = 0.12
+# Caculating the best fft for this host takes some time
+# at startup, but for long runs it is good. Thus we turn
+# it on for benchmarking!
+optimize_fft             = yes
+
+
+

@@ -1,0 +1,46 @@
+ vasp.4.6.12  27Jun03 complex 
+ POSCAR found :  1 types and    8 ions
+ WARNING: mass on POTCAR and INCAR are incompatible
+  typ 1  Mass 63.55 63.546
+ LDA part: xc-table for Ceperly-Alder, standard interpolation
+
+ ----------------------------------------------------------------------------- 
+|                                                                             |
+|           W    W    AA    RRRRR   N    N  II  N    N   GGGG   !!!           |
+|           W    W   A  A   R    R  NN   N  II  NN   N  G    G  !!!           |
+|           W    W  A    A  R    R  N N  N  II  N N  N  G       !!!           |
+|           W WW W  AAAAAA  RRRRR   N  N N  II  N  N N  G  GGG   !            |
+|           WW  WW  A    A  R   R   N   NN  II  N   NN  G    G                |
+|           W    W  A    A  R    R  N    N  II  N    N   GGGG   !!!           |
+|                                                                             |
+|      VASP found     21 degrees of freedom                                   |
+|      the temperature will equal 2*E(kin)/ (degrees of freedom)              |
+|      this differs from previous releases, where T was 2*E(kin)/(3 NIONS).   |
+|      The new definition is more consistent                                  |
+|                                                                             |
+ ----------------------------------------------------------------------------- 
+
+ memory requirements are:
+
+ energy cutoff:                   ENCUT         150.00
+ energy cutoff (augmentation):    ENAUG         391.46
+ memory requirements are:
+
+ number of kpoints                NKPTS                1
+ number of bands                  NBANDS              48
+ number of grid points            MPLWV            17408
+ number of plane waves            NRPLWV             526
+ real space IRMAX              1  IRDMAX            4500
+ arrays on large grid ( 6 + NTYP)*MPLWVM*16      1949696
+ 1 sets of wavefunctions                          483840
+ projectors in real space                              0
+ projectors in reciprocal space                   122032
+---------------------------------------------------------
+ gives a total  of      2.6 Mbytes       or      2555568
+ add 5-10 Mbytes for executable (depends on OS)
+
+
+  NGX = 16; NGY = 16; NGZ = 16
+  NGXF= 32; NGYF= 32; NGZF= 32
+  NBANDS=  48; NBLK=  32
+

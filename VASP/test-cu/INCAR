@@ -1,0 +1,37 @@
+ SYSTEM =  Cu: benchmark                           
+
+ Startparameter for this Run:
+   NWRITE =      2;   LPETIM=F    write-flag & timer
+   ISTART =      0    job   : 0-new  1-cont  2-samecut
+
+ Electronic Relaxation 1
+   ENMAX  = 150.00 eV 
+   NELM   =     20;   
+   EDIFF  =   1E-04   stopping-criterion for ELM
+   BMIX   =  3.00
+
+ Ionic Relaxation
+   NSW    =      5    number of steps for IOM
+   NBLOCK =      1;   KBLOCK =      5    inner block; outer block 
+   IBRION =      0    ionic relax: 0-MD 1-quasi-New 2-CG
+   ISIF   =      0    stress and relaxation
+   ISYM   =      0 
+   IWAVPR =      2    prediction:  0-non 1-charg 2-wave 3-comb
+   LCORR  =      T    Harris-correction to forces
+
+   POTIM  =   1.50    time-step for ion-motion
+   TEBEG  = 1873.0 ;   TEEND=1873.0 initial temperature
+   SMASS  =   3.00    Nose mass-parameter (am)
+
+  Mass of Ions in am
+   POMASS =  63.55
+   ZVAL   =  11.00
+
+ DOS related values:
+   ISMEAR =     0;   SIGMA  =    .80  broadening in eV -4-tet -1-fermi 0-gaus
+
+ Electronic Relaxation 2
+   IALGO  =     38    algorithm
+   LDIAG  =      T    sub-space diagonalisation
+   LREAL  =      F    real-space projection
+
